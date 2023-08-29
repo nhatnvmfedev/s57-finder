@@ -1,9 +1,15 @@
 <template>
-  <Tutorial/>
+  <div>
+    <ListStadium />
+  </div>
 </template>
 
 <script>
+import ListStadium from '~/components/ListStadium/ListStadium.vue'
 export default {
-  name: 'IndexPage'
-}
+  layout: "DefaultLayout",
+  data() {
+    return {}
+  }
+};
 </script>

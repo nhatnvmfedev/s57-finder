@@ -1,0 +1,31 @@
+.find_list {
+  .item {
+    position: relative;
+    padding: 1em;
+    .item_avt {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &_accept {
+      position: absolute;
+      background-color: rgba(153, 27, 27, 0.7);
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      display: none;
+      i {
+        font-size: 3rem;
+        color: #fff;
+      }
+    }
+    &:hover {
+      .item_accept {
+        display: flex;
+      }
+    }
+  }
+}
