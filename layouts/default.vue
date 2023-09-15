@@ -6,7 +6,7 @@
         <MenuTop class="col-span-2"></MenuTop>
       </div>
     </header>
-    <div class="con_content container mx-auto">
+    <div class="con_content container mx-auto px-4">
       <div class="grid grid-cols-9 gap-4">
         <Nuxt class="col-span-7" />
         <TheSideBar class="col-span-2 bg-white rounded shadow-lg p-4" />

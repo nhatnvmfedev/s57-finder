@@ -4,8 +4,7 @@
 <template>
   <div class="">
     <div class="container mx-auto grid grid-cols-4 gap-4 pb-20">
-      <ItemStadium v-for="i in 16" :key="i" />
+      child stadium
     </div>
-    <Pagination :currentPage="currentPage" :totalPages="totalPages" @page-change="changePage" />
   </div>
 </template>

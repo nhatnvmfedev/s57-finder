@@ -1,8 +1,10 @@
 import Pagination from '~/components/Pagination/Pagination.vue';
+import ItemStadium from '~/components/ItemStadium';
 export default {
   name: 'ListStadium',
   components: {
-    Pagination
+    Pagination,
+    ItemStadium
   },
   data() {
     return {
