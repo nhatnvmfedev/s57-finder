@@ -20,6 +20,7 @@
 
 <script>
 export default {
+  layout: 'HomeLayout',
   name: 'InspirePage'
 }
 </script>

@@ -3,7 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - s57-finder',
+    titleTemplate: 's57-finder',
     title: 's57-finder',
     htmlAttrs: {
       lang: 'en'
@@ -21,6 +21,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/scss/_common.scss',
+    '@fortawesome/fontawesome-free/css/all.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -44,7 +46,7 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ['~/assets/scss/base/_variables.scss'],
     theme: {
       dark: true,
       themes: {
@@ -56,12 +58,19 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3
-        }
+        },
+        light: {
+          primary: "#121212",
+          secondary: '#121212',
+          accent: '#121212',
+          // Add other colors as needed
+        },
       }
     }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  layout: 'homepage',
 }

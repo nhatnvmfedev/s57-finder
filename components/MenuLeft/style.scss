@@ -1,0 +1,24 @@
+.menu_left {
+  position: relative;
+  min-height: 80vh;
+  .btn_nav {
+    position: absolute;
+    right: 1em;
+  }
+}
+
+.v-navigation-drawer {
+  min-height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  .v-list-item {
+    &--link {
+      &::before {
+        border-radius: 20px;
+      }
+    }
+    .v-icon {
+      font-size: 1.25em;
+    }
+  }
+}

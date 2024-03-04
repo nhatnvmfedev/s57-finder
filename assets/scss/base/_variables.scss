@@ -1,0 +1,24 @@
+$colors: (
+  'white': #fff,
+  'bg': #edf2f5,
+  'base': #191d23,
+  'gray-500': #686c79,
+  'gray-400': #cdcedf,
+  'blue-400': #0a6ada,
+  'blue-500': #023b96,
+  'red': #df142d,
+  'green': #56b64e,
+  'yellow': #ffc54d
+);
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+}
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background: $color;
+  }
+}

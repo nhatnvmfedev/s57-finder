@@ -1,16 +1,14 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-container>
       <v-row>
         <!-- Cột chiếm 4/12 của dòng -->
         <v-col class="col-2">
           <MenuLeft />
         </v-col>
-
         <!-- Cột chiếm 8/12 của dòng -->
         <v-col class="col-8">
-          <MenuMain />
-          Content
+          <Nuxt />
         </v-col>
       </v-row>
     </v-container>
@@ -19,13 +17,11 @@
 
 <script>
 import MenuLeft from './../components/MenuLeft'
-import MenuMain from './../components/MenuMain'
 
 export default {
-  name: 'DefaultLayout',
+  name: 'homepage',
   comments: {
-    MenuLeft,
-    MenuMain
+    MenuLeft
   },
   data() {
     return {
